@@ -513,19 +513,7 @@ footer li{ margin-bottom: 8px; }
   </section>
 
 </main>
-/*
-<footer>
-  <h2>Posters en beeldmateriaal koppelen (TMDB)</h2>
-  <p>Deze pagina toont per film een lege posterplek totdat <code>assets/films.json</code> een <code>poster_url</code> bevat. Filmposters zijn auteursrechtelijk beschermd materiaal, dus deze pagina bevat er zelf geen — en de TMDB-sleutel hoort nooit in client-side code terecht te komen, ook niet als <code>fetch()</code>-aanroep vanuit deze HTML, omdat iedereen de broncode van een GitHub Pages-site kan inzien en de sleutel dan direct leesbaar is.</p>
-  <p>In plaats daarvan haalt een GitHub Action de posterlinks tijdens de build op met de repository-secret <code>TMDB_KEY</code>, en schrijft alleen de resulterende URL's terug naar <code>assets/films.json</code>. De sleutel zelf verlaat de Action-omgeving nooit.</p>
-  <ol>
-    <li>Zorg dat de repository-secret <code>TMDB_KEY</code> al is ingesteld (Settings → Secrets and variables → Actions).</li>
-    <li>Voeg <code>scripts/fetch-posters.mjs</code> en <code>.github/workflows/fetch-posters.yml</code> toe (bijgeleverd).</li>
-    <li>Draai de workflow eenmalig handmatig via Actions → "Fetch TMDB posters" → Run workflow. De posterlinks worden dan als commit teruggeschreven naar <code>assets/films.json</code>.</li>
-    <li>Ververs de site: elke poster verschijnt automatisch zodra <code>poster_url</code> gevuld is.</li>
-  </ol>
-</footer>
-*/
+
 <script>
 async function laadData(){
   const container = document.getElementById('timeline-container');
