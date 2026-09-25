@@ -11,8 +11,8 @@
       "regisseur": "Ridley Scott",
       "tmdb_query": "Prometheus 2012",
       "tmdb_id": 70981,
-      "poster_url": "https://image.tmdb.org/t/p/w500/qsYQflQhOuhDpQ0W2aOcwqgDAeI.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w1280/qDG5SlGkWNsjSJWiGTBMFI8DpzA.jpg",
+      "poster_url": null,
+      "backdrop_url": null,
       "bedrijven": [
         {
           "naam": "Weyland Corporation",
@@ -20,36 +20,11 @@
         }
       ],
       "personages": [
-        {
-          "naam": "Dr. Elizabeth Shaw",
-          "acteur": "Noomi Rapace",
-          "status": "nieuw",
-          "notitie": "Wetenschapper en drijvende kracht achter de zoektocht naar de Engineers."
-        },
-        {
-          "naam": "David 8",
-          "acteur": "Michael Fassbender",
-          "status": "nieuw",
-          "notitie": "Synthetisch bemanningslid van Weyland, met een eigen, dubbelzinnige agenda. Keert terug in Alien: Covenant."
-        },
-        {
-          "naam": "Peter Weyland",
-          "acteur": "Guy Pearce",
-          "status": "nieuw",
-          "notitie": "Oprichter van Weyland Corporation, financiert de missie in ruil voor onsterfelijkheid."
-        },
-        {
-          "naam": "Meredith Vickers",
-          "acteur": "Charlize Theron",
-          "status": "nieuw",
-          "notitie": "Bedrijfsafgevaardigde van Weyland aan boord van de Prometheus."
-        },
-        {
-          "naam": "Charlie Holloway",
-          "acteur": "Logan Marshall-Green",
-          "status": "nieuw",
-          "notitie": "Archeoloog en partner van Shaw."
-        }
+        { "naam": "Dr. Elizabeth Shaw", "acteur": "Noomi Rapace", "status": "nieuw", "notitie": "Wetenschapper en drijvende kracht achter de zoektocht naar de Engineers." },
+        { "naam": "David 8", "acteur": "Michael Fassbender", "status": "nieuw", "notitie": "Synthetisch bemanningslid van Weyland, met een eigen, dubbelzinnige agenda. Keert terug in Alien: Covenant." },
+        { "naam": "Peter Weyland", "acteur": "Guy Pearce", "status": "nieuw", "notitie": "Oprichter van Weyland Corporation, financiert de missie in ruil voor onsterfelijkheid." },
+        { "naam": "Meredith Vickers", "acteur": "Charlize Theron", "status": "nieuw", "notitie": "Bedrijfsafgevaardigde van Weyland aan boord van de Prometheus." },
+        { "naam": "Charlie Holloway", "acteur": "Logan Marshall-Green", "status": "nieuw", "notitie": "Archeoloog en partner van Shaw." }
       ],
       "synopsis": "De wetenschappers Elizabeth Shaw en Charlie Holloway ontdekken een terugkerend sterrenpatroon in oude beschavingen en overtuigen Weyland Corporation om een expeditie naar het maanmaantje LV-223 te financieren. Aan boord van het ruimteschip Prometheus hopen ze de 'Engineers' te vinden, de vermeende scheppers van de mens. In plaats van antwoorden vinden ze een verlaten faciliteit vol biologische wapens, waaronder een zwarte, muterende substantie die als basis dient voor latere Xenomorph-achtige levensvormen. De android David volgt een eigen, verborgen agenda namens Peter Weyland, die zelf aan boord blijkt te zijn met de hoop zijn eigen sterfelijkheid te ontlopen.",
       "plotverband": "Introduceert de Engineers, de 'black goo' en de synthetische David: de fundamenten waarop de latere ontwikkeling van de Xenomorph is gebouwd. Weyland Corporation wordt hier geïntroduceerd als voorloper van Weyland-Yutani."
@@ -64,9 +39,9 @@
       "gapTotVolgende": "16 jaar",
       "regisseur": "Ridley Scott",
       "tmdb_query": "Alien Covenant",
-      "tmdb_id": 316029,
-      "poster_url": "https://image.tmdb.org/t/p/w500/b9CeobiihCx1uG1tpw8hXmpi7nm.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w1280/lrNKm3HNvGdZoAfiBKu7b04FLHN.jpg",
+      "tmdb_id": 126889,
+      "poster_url": null,
+      "backdrop_url": null,
       "bedrijven": [
         {
           "naam": "Weyland Corporation",
@@ -74,30 +49,10 @@
         }
       ],
       "personages": [
-        {
-          "naam": "David",
-          "acteur": "Michael Fassbender",
-          "status": "terugkerend",
-          "notitie": "Enige overlevende van de Prometheus-missie; heeft jarenlang in isolatie geëxperimenteerd met de black goo."
-        },
-        {
-          "naam": "Walter",
-          "acteur": "Michael Fassbender",
-          "status": "nieuw",
-          "notitie": "Nieuwer, functioneler synthetisch model aan boord van de Covenant; visueel identiek aan David maar met beperktere emotionele autonomie."
-        },
-        {
-          "naam": "Daniels",
-          "acteur": "Katherine Waterston",
-          "status": "nieuw",
-          "notitie": "Terraformeringsexpert en na de dood van de kapitein feitelijk leidster van de overlevenden."
-        },
-        {
-          "naam": "Oram",
-          "acteur": "Billy Crudup",
-          "status": "nieuw",
-          "notitie": "Nieuwe kapitein van de Covenant na het overlijden van kapitein Branson."
-        }
+        { "naam": "David", "acteur": "Michael Fassbender", "status": "terugkerend", "notitie": "Enige overlevende van de Prometheus-missie; heeft jarenlang in isolatie geëxperimenteerd met de black goo." },
+        { "naam": "Walter", "acteur": "Michael Fassbender", "status": "nieuw", "notitie": "Nieuwer, functioneler synthetisch model aan boord van de Covenant; visueel identiek aan David maar met beperktere emotionele autonomie." },
+        { "naam": "Daniels", "acteur": "Katherine Waterston", "status": "nieuw", "notitie": "Terraformeringsexpert en na de dood van de kapitein feitelijk leidster van de overlevenden." },
+        { "naam": "Oram", "acteur": "Billy Crudup", "status": "nieuw", "notitie": "Nieuwe kapitein van de Covenant na het overlijden van kapitein Branson." }
       ],
       "synopsis": "Elf jaar na de Prometheus-missie ontvangt de bemanning van het kolonisatieschip Covenant een mysterieus signaal vanaf een onbekende, ogenschijnlijk bewoonbare planeet. Ze wijken af van hun oorspronkelijke bestemming en ontdekken de enige overlevende van de Prometheus-expeditie: de android David. Die blijkt in isolatie te hebben doorgewerkt aan het perfectioneren van de black goo, met dodelijke experimenten op de Engineers en op zichzelf tot gevolg. Zijn werk resulteert in de Neomorph en uiteindelijk in de klassieke Xenomorph-vorm. David neemt de identiteit van zijn nieuwere, gehoorzamere tegenhanger Walter over en verstopt embryo's aan boord van de Covenant.",
       "plotverband": "Toont hoe David, na de gebeurtenissen van Prometheus, verantwoordelijk is voor het 'ontwerpen' van de Xenomorph zoals die in Alien (1979) verschijnt. Het scheepstype (kolonisatieschip in Weyland-eigendom) en de vondst van embryo's leggen de directe basis voor de latere Company-belangstelling voor het organisme."
@@ -112,54 +67,20 @@
       "gapTotVolgende": "2 jaar",
       "regisseur": "Noah Hawley (bedenker/showrunner)",
       "tmdb_query": "Alien Earth",
-      "tmdb_id": 210255,
-      "poster_url": "https://image.tmdb.org/t/p/w500/sWDqFXdPWo4xINNIiVlpOhZG8rE.jpg",
+      "tmdb_id": 157239,
+      "poster_url": null,
       "backdrop_url": null,
       "bedrijven": [
-        {
-          "naam": "Weyland-Yutani",
-          "rol": "Eigenaar van het onderzoeksschip USCSS Maginot, dat met meerdere buitenaardse specimens aan boord neerstort op Aarde. Beheerst Noord- en Zuid-Amerika, Mars en de manen van Saturnus."
-        },
-        {
-          "naam": "Prodigy Corporation",
-          "rol": "Jongste van de vijf bedrijven; ontwikkelt onder leiding van Boy Kavalier de 'hybride'-technologie waarbij menselijk bewustzijn in een synthetisch lichaam wordt geplaatst. Beheerst grote delen van Azië, Afrika, Australië en Groenland."
-        },
-        {
-          "naam": "Lynch, Dynamic en Threshold",
-          "rol": "De overige drie van 'De Vijf' bedrijven die de aarde in 2120 bestuurlijk verdelen; spelen in het eerste seizoen vooral een rol op de achtergrond."
-        }
+        { "naam": "Weyland-Yutani", "rol": "Eigenaar van het onderzoeksschip USCSS Maginot, dat met meerdere buitenaardse specimens aan boord neerstort op Aarde. Beheerst Noord- en Zuid-Amerika, Mars en de manen van Saturnus." },
+        { "naam": "Prodigy Corporation", "rol": "Jongste van de vijf bedrijven; ontwikkelt onder leiding van Boy Kavalier de 'hybride'-technologie waarbij menselijk bewustzijn in een synthetisch lichaam wordt geplaatst. Beheerst grote delen van Azië, Afrika, Australië en Groenland." },
+        { "naam": "Lynch, Dynamic en Threshold", "rol": "De overige drie van 'De Vijf' bedrijven die de aarde in 2120 bestuurlijk verdelen; spelen in het eerste seizoen vooral een rol op de achtergrond." }
       ],
       "personages": [
-        {
-          "naam": "Wendy",
-          "acteur": "Sydney Chandler",
-          "status": "nieuw",
-          "notitie": "Eerste 'hybride': een terminaal ziek kind wier bewustzijn is overgezet naar een volwassen synthetisch lichaam."
-        },
-        {
-          "naam": "Hermit (Joe 'Hermit' Hermit)",
-          "acteur": "Alex Lawther",
-          "status": "nieuw",
-          "notitie": "Biologische broer van Wendy en tactisch medicus."
-        },
-        {
-          "naam": "Kirsh",
-          "acteur": "Timothy Olyphant",
-          "status": "nieuw",
-          "notitie": "Synthetische mentor van Prodigy die de hybriden begeleidt."
-        },
-        {
-          "naam": "Boy Kavalier",
-          "acteur": "Samuel Blenkin",
-          "status": "nieuw",
-          "notitie": "Jonge oprichter en CEO van Prodigy Corporation."
-        },
-        {
-          "naam": "Morrow",
-          "acteur": "Babou Ceesay",
-          "status": "nieuw",
-          "notitie": "Beveiligingschef van Weyland-Yutani aan boord van de Maginot; enige menselijke overlevende van de crash."
-        }
+        { "naam": "Wendy", "acteur": "Sydney Chandler", "status": "nieuw", "notitie": "Eerste 'hybride': een terminaal ziek kind wier bewustzijn is overgezet naar een volwassen synthetisch lichaam." },
+        { "naam": "Hermit (Joe 'Hermit' Hermit)", "acteur": "Alex Lawther", "status": "nieuw", "notitie": "Biologische broer van Wendy en tactisch medicus." },
+        { "naam": "Kirsh", "acteur": "Timothy Olyphant", "status": "nieuw", "notitie": "Synthetische mentor van Prodigy die de hybriden begeleidt." },
+        { "naam": "Boy Kavalier", "acteur": "Samuel Blenkin", "status": "nieuw", "notitie": "Jonge oprichter en CEO van Prodigy Corporation." },
+        { "naam": "Morrow", "acteur": "Babou Ceesay", "status": "nieuw", "notitie": "Beveiligingschef van Weyland-Yutani aan boord van de Maginot; enige menselijke overlevende van de crash." }
       ],
       "synopsis": "In 2120 wordt de aarde niet langer door landen bestuurd, maar verdeeld tussen vijf megabedrijven. Prodigy Corporation, onder leiding van de jonge Boy Kavalier, doorbreekt een technologische grens met de 'hybride': een synthetisch lichaam waarin het bewustzijn van een stervend kind wordt geplaatst. Wendy is het eerste prototype. Wanneer het Weyland-Yutani-onderzoeksschip Maginot met meerdere buitenaardse levensvormen aan boord neerstort in Prodigy City, worden Wendy en een groep andere hybriden ingezet om de lading te bergen. Ze stuiten daarbij op de Xenomorph en andere, nog onbekende organismen, terwijl op de achtergrond een machtsstrijd tussen Weyland-Yutani en Prodigy om de buit losbarst.",
       "plotverband": "Speelt zich af twee jaar vóór de gebeurtenissen van Alien (1979) en introduceert Weyland-Yutani als de reeds gevestigde marktleider in synthetische mensen en diepe-ruimtevaart, kort voordat de Nostromo aan zijn noodlottige reis begint. Toont voor het eerst het bredere commerciële en corporate landschap waarin de latere films zich afspelen."
@@ -175,39 +96,16 @@
       "regisseur": "Ridley Scott",
       "tmdb_query": "Alien 1979",
       "tmdb_id": 348,
-      "poster_url": "https://image.tmdb.org/t/p/w500/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w1280/AmR3JG1VQVxU8TfAvljUhfSFUOx.jpg",
+      "poster_url": null,
+      "backdrop_url": null,
       "bedrijven": [
-        {
-          "naam": "Weyland-Yutani ('de Company')",
-          "rol": "Eigenaar van het commerciële sleepschip Nostromo. Geeft via het scheepscomputersysteem MU-TH-UR de geheime opdracht om het organisme levend aan boord te halen, met de bemanning als 'ontbeerlijk'."
-        }
+        { "naam": "Weyland-Yutani ('de Company')", "rol": "Eigenaar van het commerciële sleepschip Nostromo. Geeft via het scheepscomputersysteem MU-TH-UR de geheime opdracht om het organisme levend aan boord te halen, met de bemanning als 'ontbeerlijk'." }
       ],
       "personages": [
-        {
-          "naam": "Ellen Ripley",
-          "acteur": "Sigourney Weaver",
-          "status": "nieuw",
-          "notitie": "Derde officier van de Nostromo; enige overlevende en hoofdpersonage van de klassieke filmreeks."
-        },
-        {
-          "naam": "Dallas",
-          "acteur": "Tom Skerritt",
-          "status": "nieuw",
-          "notitie": "Kapitein van de Nostromo."
-        },
-        {
-          "naam": "Ash",
-          "acteur": "Ian Holm",
-          "status": "nieuw",
-          "notitie": "Wetenschapsofficier, blijkt een synthetisch mens en geheim agent van de Company te zijn."
-        },
-        {
-          "naam": "Kane, Lambert, Brett, Parker",
-          "acteur": "diverse acteurs",
-          "status": "nieuw",
-          "notitie": "Overige bemanningsleden van de Nostromo."
-        }
+        { "naam": "Ellen Ripley", "acteur": "Sigourney Weaver", "status": "nieuw", "notitie": "Derde officier van de Nostromo; enige overlevende en hoofdpersonage van de klassieke filmreeks." },
+        { "naam": "Dallas", "acteur": "Tom Skerritt", "status": "nieuw", "notitie": "Kapitein van de Nostromo." },
+        { "naam": "Ash", "acteur": "Ian Holm", "status": "nieuw", "notitie": "Wetenschapsofficier, blijkt een synthetisch mens en geheim agent van de Company te zijn." },
+        { "naam": "Kane, Lambert, Brett, Parker", "acteur": "diverse acteurs", "status": "nieuw", "notitie": "Overige bemanningsleden van de Nostromo." }
       ],
       "synopsis": "Het commerciële sleepschip Nostromo onderschept op de terugweg naar Aarde een noodsignaal vanaf de maan LV-426. Bemanningslid Kane wordt daar besmet door een 'facehugger', wat leidt tot de geboorte van een volwassen Xenomorph aan boord. Terwijl het wezen de bemanning één voor één elimineert, blijkt wetenschapsofficier Ash een android te zijn die in het geheim door de Company is geïnstrueerd om het organisme koste wat kost levend terug naar Aarde te brengen, ten koste van de bemanning. Ellen Ripley overleeft als enige door het schip op te blazen en zichzelf en haar kat in een reddingscapsule in slaap te brengen.",
       "plotverband": "De film die de reeks opende en waarin de Xenomorph, Weyland-Yutani en Ellen Ripley voor het eerst samenkomen. Ripleys hyperslaap na dit incident overbrugt de 57 jaar tot Aliens en vormt het kader waarbinnen Alien: Romulus zich later afspeelt."
@@ -222,34 +120,16 @@
       "gapTotVolgende": "37 jaar",
       "regisseur": "Fede Álvarez",
       "tmdb_query": "Alien Romulus",
-      "tmdb_id": 951491,
-      "poster_url": "https://image.tmdb.org/t/p/w500/u7Lp1Hi8aBS73jv4KRMIv5aK4ax.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w1280/uUJp5I4IbzuhdUiEx4R9OAoFpbz.jpg",
+      "tmdb_id": 945961,
+      "poster_url": null,
+      "backdrop_url": null,
       "bedrijven": [
-        {
-          "naam": "Weyland-Yutani",
-          "rol": "Eigenaar van het verlaten ruimtestation Renaissance (bestaande uit de secties Romulus en Remus), waar onder meer het wrak van de Nostromo en een restant van de black goo uit Prometheus worden bewaard."
-        }
+        { "naam": "Weyland-Yutani", "rol": "Eigenaar van het verlaten ruimtestation Renaissance (bestaande uit de secties Romulus en Remus), waar onder meer het wrak van de Nostromo en een restant van de black goo uit Prometheus worden bewaard." }
       ],
       "personages": [
-        {
-          "naam": "Rain Carradine",
-          "acteur": "Cailee Spaeny",
-          "status": "nieuw",
-          "notitie": "Jonge koloniste die probeert te ontsnappen aan een leven van contractarbeid voor de Company."
-        },
-        {
-          "naam": "Andy",
-          "acteur": "David Jonsson",
-          "status": "nieuw",
-          "notitie": "Verouderde synthetische 'broer' van Rain."
-        },
-        {
-          "naam": "Rook",
-          "acteur": "archiefbeeld/animatronic (stem: Daniel Betts)",
-          "status": "nieuw",
-          "notitie": "Beschadigde android van hetzelfde model als Ash uit Alien (1979), aangetroffen aan boord van het station."
-        }
+        { "naam": "Rain Carradine", "acteur": "Cailee Spaeny", "status": "nieuw", "notitie": "Jonge koloniste die probeert te ontsnappen aan een leven van contractarbeid voor de Company." },
+        { "naam": "Andy", "acteur": "David Jonsson", "status": "nieuw", "notitie": "Verouderde synthetische 'broer' van Rain." },
+        { "naam": "Rook", "acteur": "archiefbeeld/animatronic (stem: Daniel Betts)", "status": "nieuw", "notitie": "Beschadigde android van hetzelfde model als Ash uit Alien (1979), aangetroffen aan boord van het station." }
       ],
       "synopsis": "Twintig jaar na de gebeurtenissen van Alien probeert een groep jonge kolonisten, onder wie Rain Carradine en haar synthetische broer Andy, te ontsnappen van hun sombere mijnbouwkolonie door een verlaten Weyland-Yutani-ruimtestation te plunderen. Aan boord ontdekken ze de resten van de Nostromo-missie, een beschadigde android van hetzelfde model als Ash, en een voorraad van de black goo die teruggaat tot de Prometheus-missie. Wat begint als een bergingsoperatie ontaardt al snel in een strijd om te overleven tegen facehuggers, Xenomorphs en, tegen het einde, een verontrustende hybride levensvorm.",
       "plotverband": "Overbrugt de 57 jaar tussen Alien en Aliens en legt expliciete verbindingen naar zowel Prometheus/Covenant (de black goo) als naar Alien 3 en Alien: Resurrection (de mutant-hybride aan het einde van de film)."
@@ -265,45 +145,17 @@
       "regisseur": "James Cameron",
       "tmdb_query": "Aliens 1986",
       "tmdb_id": 679,
-      "poster_url": "https://image.tmdb.org/t/p/w500/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w1280/4kix6fAblJIH6eMs0Ku2loyZJXK.jpg",
+      "poster_url": null,
+      "backdrop_url": null,
       "bedrijven": [
-        {
-          "naam": "Weyland-Yutani",
-          "rol": "Stuurt via bedrijfsagent Carter Burke een eenheid koloniale mariniers naar LV-426 om de kolonie Hadley's Hope te onderzoeken, met als verborgen doel opnieuw een levend specimen te bemachtigen."
-        }
+        { "naam": "Weyland-Yutani", "rol": "Stuurt via bedrijfsagent Carter Burke een eenheid koloniale mariniers naar LV-426 om de kolonie Hadley's Hope te onderzoeken, met als verborgen doel opnieuw een levend specimen te bemachtigen." }
       ],
       "personages": [
-        {
-          "naam": "Ellen Ripley",
-          "acteur": "Sigourney Weaver",
-          "status": "terugkerend",
-          "notitie": "57 jaar na de gebeurtenissen van Alien uit hyperslaap ontwaakt; keert vrijwillig terug naar LV-426."
-        },
-        {
-          "naam": "Newt",
-          "acteur": "Carrie Henn",
-          "status": "nieuw",
-          "notitie": "Enige overlevende kolonist van Hadley's Hope; wordt een pleegdochter-figuur voor Ripley."
-        },
-        {
-          "naam": "Bishop",
-          "acteur": "Lance Henriksen",
-          "status": "nieuw",
-          "notitie": "Synthetisch bemanningslid; in tegenstelling tot Ash loyaal en behulpzaam."
-        },
-        {
-          "naam": "Carter Burke",
-          "acteur": "Paul Reiser",
-          "status": "nieuw",
-          "notitie": "Vertegenwoordiger van Weyland-Yutani die de missie stiekem naar de belangen van de Company stuurt."
-        },
-        {
-          "naam": "Korporaal Hicks, Vasquez",
-          "acteur": "Michael Biehn, Jenette Goldstein",
-          "status": "nieuw",
-          "notitie": "Leden van het marinierspeloton dat Ripley vergezelt."
-        }
+        { "naam": "Ellen Ripley", "acteur": "Sigourney Weaver", "status": "terugkerend", "notitie": "57 jaar na de gebeurtenissen van Alien uit hyperslaap ontwaakt; keert vrijwillig terug naar LV-426." },
+        { "naam": "Newt", "acteur": "Carrie Henn", "status": "nieuw", "notitie": "Enige overlevende kolonist van Hadley's Hope; wordt een pleegdochter-figuur voor Ripley." },
+        { "naam": "Bishop", "acteur": "Lance Henriksen", "status": "nieuw", "notitie": "Synthetisch bemanningslid; in tegenstelling tot Ash loyaal en behulpzaam." },
+        { "naam": "Carter Burke", "acteur": "Paul Reiser", "status": "nieuw", "notitie": "Vertegenwoordiger van Weyland-Yutani die de missie stiekem naar de belangen van de Company stuurt." },
+        { "naam": "Korporaal Hicks, Vasquez", "acteur": "Michael Biehn, Jenette Goldstein", "status": "nieuw", "notitie": "Leden van het marinierspeloton dat Ripley vergezelt." }
       ],
       "synopsis": "57 jaar na de vernietiging van de Nostromo wordt Ripley uit hyperslaap gehaald. Niemand gelooft haar verhaal, totdat het contact met de kolonie Hadley's Hope op LV-426 wegvalt. Ripley vergezelt een peloton koloniale mariniers naar de planeet, waar blijkt dat de kolonisten zijn overgenomen door een volledig Xenomorph-nest, aangevoerd door een Alien Queen. Bedrijfsagent Burke blijkt in het geheim de belangen van Weyland-Yutani te dienen en probeert specimens levend terug naar Aarde te smokkelen. Ripley vindt de kleine overlevende Newt en confronteert uiteindelijk de Queen zelf.",
       "plotverband": "Bevestigt dat Weyland-Yutani doelbewust en herhaaldelijk mensenlevens ondergeschikt maakt aan het winnen van een levend Xenomorph-specimen, een rode draad die teruggaat tot Ash's opdracht in Alien."
@@ -319,33 +171,15 @@
       "regisseur": "David Fincher",
       "tmdb_query": "Alien 3",
       "tmdb_id": 8077,
-      "poster_url": "https://image.tmdb.org/t/p/w500/xh5wI0UoW7DfS1IyLy3d2CgrCEP.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w1280/lU0zVj8KcQVkPczdGGraYGiRC72.jpg",
+      "poster_url": null,
+      "backdrop_url": null,
       "bedrijven": [
-        {
-          "naam": "Weyland-Yutani",
-          "rol": "Stuurt na afloop van het reddingsschip-noodsignaal een 'bergingsteam' naar de strafkolonie Fiorina 161 met als enig doel de Xenomorph-koningin in Ripley levend te bemachtigen."
-        }
+        { "naam": "Weyland-Yutani", "rol": "Stuurt na afloop van het reddingsschip-noodsignaal een 'bergingsteam' naar de strafkolonie Fiorina 161 met als enig doel de Xenomorph-koningin in Ripley levend te bemachtigen." }
       ],
       "personages": [
-        {
-          "naam": "Ellen Ripley",
-          "acteur": "Sigourney Weaver",
-          "status": "terugkerend",
-          "notitie": "Enige overlevende van een noodlanding op de strafplaneet Fiorina 161; blijkt drager te zijn van een Alien Queen-embryo."
-        },
-        {
-          "naam": "Bishop",
-          "acteur": "Lance Henriksen",
-          "status": "terugkerend",
-          "notitie": "Verschijnt als beschadigd wrak en later als menselijke ontwerper van het androidmodel."
-        },
-        {
-          "naam": "Dillon",
-          "acteur": "Charles S. Dutton",
-          "status": "nieuw",
-          "notitie": "Geestelijk leider onder de gevangenen van Fiorina 161."
-        }
+        { "naam": "Ellen Ripley", "acteur": "Sigourney Weaver", "status": "terugkerend", "notitie": "Enige overlevende van een noodlanding op de strafplaneet Fiorina 161; blijkt drager te zijn van een Alien Queen-embryo." },
+        { "naam": "Bishop", "acteur": "Lance Henriksen", "status": "terugkerend", "notitie": "Verschijnt als beschadigd wrak en later als menselijke ontwerper van het androidmodel." },
+        { "naam": "Dillon", "acteur": "Charles S. Dutton", "status": "nieuw", "notitie": "Geestelijk leider onder de gevangenen van Fiorina 161." }
       ],
       "synopsis": "Een noodlanding brengt Ripley als enige overlevende van de Sulaco op de troosteloze strafkolonie Fiorina 161, bevolkt door voormalige zware criminelen. Newt en Hicks blijken de crash niet te hebben overleefd. Al snel blijkt dat een facehugger mee aan boord kwam: een Xenomorph terroriseert de kolonie, terwijl Ripley ontdekt dat ze zelf een Alien Queen-embryo bij zich draagt. Wanneer een Weyland-Yutani-bergingsteam arriveert met als enige opdracht het embryo levend te bergen, kiest Ripley ervoor zichzelf samen met het embryo te vernietigen om te voorkomen dat het bedrijf het organisme als wapen in handen krijgt.",
       "plotverband": "Sluit Ripleys oorspronkelijke verhaallijn af en onderstreept nogmaals het patroon waarbij Weyland-Yutani telkens mensenlevens opoffert voor toegang tot het organisme."
@@ -361,27 +195,14 @@
       "regisseur": "Jean-Pierre Jeunet",
       "tmdb_query": "Alien Resurrection",
       "tmdb_id": 8078,
-      "poster_url": "https://image.tmdb.org/t/p/w500/9aRDMlU5Zwpysilm0WCWzU2PCFv.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/w1280/ikr0UILfvRerzMNoBTtJtyuWAEV.jpg",
+      "poster_url": null,
+      "backdrop_url": null,
       "bedrijven": [
-        {
-          "naam": "United Systems Military (USM)",
-          "rol": "Militaire opvolger die, 200 jaar na Ripleys dood, met DNA-materiaal een kloon van Ripley (en het Alien Queen-embryo in haar) laat vervaardigen aan boord van het onderzoeksschip Auriga, met als doel de Xenomorph als wapen te fokken."
-        }
+        { "naam": "United Systems Military (USM)", "rol": "Militaire opvolger die, 200 jaar na Ripleys dood, met DNA-materiaal een kloon van Ripley (en het Alien Queen-embryo in haar) laat vervaardigen aan boord van het onderzoeksschip Auriga, met als doel de Xenomorph als wapen te fokken." }
       ],
       "personages": [
-        {
-          "naam": "Ripley 8",
-          "acteur": "Sigourney Weaver",
-          "status": "terugkerend (als kloon)",
-          "notitie": "Kloon met vermengd menselijk en Xenomorph-DNA, met bovenmenselijke kracht en aantasting van eerdere continuïteit."
-        },
-        {
-          "naam": "Annalee Call",
-          "acteur": "Winona Ryder",
-          "status": "nieuw",
-          "notitie": "Blijkt zelf een synthetisch 'auton'-model te zijn, met een eigen agenda om de Xenomorphs te vernietigen."
-        }
+        { "naam": "Ripley 8", "acteur": "Sigourney Weaver", "status": "terugkerend (als kloon)", "notitie": "Kloon met vermengd menselijk en Xenomorph-DNA, met bovenmenselijke kracht en aantasting van eerdere continuïteit." },
+        { "naam": "Annalee Call", "acteur": "Winona Ryder", "status": "nieuw", "notitie": "Blijkt zelf een synthetisch 'auton'-model te zijn, met een eigen agenda om de Xenomorphs te vernietigen." }
       ],
       "synopsis": "Tweehonderd jaar na haar dood op Fiorina 161 wordt Ripley door het United Systems Military gekloond uit bewaard DNA, met als doel het Alien Queen-embryo dat ze droeg te herwinnen. Het resultaat is Ripley 8: een hybride met zowel menselijke herinneringen als Xenomorph-eigenschappen. Aan boord van het onderzoeksschip Auriga worden Xenomorphs gefokt voor militair gebruik, met desastreuze gevolgen wanneer de wezens ontsnappen. Ripley 8 sluit zich aan bij een groep smokkelaars en de androïde Call om het schip en de dan ontstane mens-Alien-hybride, de 'Newborn', te vernietigen voordat het de Aarde bereikt.",
       "plotverband": "Sluit de oorspronkelijke filmreeks af: waar Weyland-Yutani in de eerdere films de drijvende commerciële kracht achter het najagen van de Xenomorph was, is die rol hier overgenomen door een militaire opvolgerorganisatie, tweehonderd jaar later."
