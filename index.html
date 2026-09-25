@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>De Alien-tijdlijn — chronologisch overzicht</title>
+<meta name="description" content="Chronologisch overzicht van de Alien-filmreeks: tijdlijn, personages, bedrijven en plotverbanden.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg: #07080a;
+  --bg-panel: #0e1013;
+  --bg-panel-2: #14171b;
+  --line: #262b30;
+  --amber: #e8a638;
+  --amber-dim: #7a5a24;
+  --phosphor: #6fd6a8;
+  --text: #d9dde0;
+  --text-dim: #8a9096;
+  --text-faint: #565c61;
+  --danger: #c25a3f;
+  --star-opacity: 1;
+  --font-display: 'Oswald', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-body: 'IBM Plex Sans', sans-serif;
+}
+
+/* Lichte variant: volgt het systeem, tenzij de schakelaar hieronder dit overschrijft */
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --bg: #f3f1ea;
+    --bg-panel: #ffffff;
+    --bg-panel-2: #eae7dd;
+    --line: #d8d4c8;
+    --amber: #a86a1c;
+    --amber-dim: #c9a05a;
+    --phosphor: #2c7a55;
+    --text: #23211c;
+    --text-dim: #57544a;
+    --text-faint: #8a8677;
+    --star-opacity: 0.35;
+  }
+}
+:root[data-theme="light"]{
+  --bg: #f3f1ea;
+  --bg-panel: #ffffff;
+  --bg-panel-2: #eae7dd;
+  --line: #d8d4c8;
+  --amber: #a86a1c;
+  --amber-dim: #c9a05a;
+  --phosphor: #2c7a55;
+  --text: #23211c;
+  --text-dim: #57544a;
+  --text-faint: #8a8677;
+  --star-opacity: 0.35;
+}
+:root[data-theme="dark"]{ color-scheme: dark; }
+:root[data-theme="light"]{ color-scheme: light; }
+:root:not([data-theme]){ color-scheme: dark light; }
+
+*{ box-sizing: border-box; }
+html{ scroll-padding-top: env(safe-area-inset-top, 0px); scroll-behavior: smooth; }
+body{
+  margin:0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.55;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+a{ color: var(--amber); }
+img{ max-width:100%; display:block; }
+
+/* ---------- Thema-schakelaar ---------- */
+.theme-toggle{
+  position: fixed;
+  top: calc(env(safe-area-inset-top, 0px) + 14px);
+  right: 16px;
+  z-index: 20;
+  display:flex; align-items:center; gap:8px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+  color: var(--text-dim);
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 12px 6px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.theme-toggle:hover{ color: var(--text); border-color: var(--amber-dim); }
+.theme-toggle svg{ width:14px; height:14px; flex:none; }
+.theme-toggle .icon-moon{ display: none; }
+:root[data-theme="light"] .theme-toggle .icon-sun{ display:none; }
+:root[data-theme="light"] .theme-toggle .icon-moon{ display: block; }
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]) .theme-toggle .icon-sun{ display:none; }
+  :root:not([data-theme="dark"]) .theme-toggle .icon-moon{ display:block; }
+}
+
+/* ---------- Achtergrondstructuur (origineel, geen bestaand artwork) ---------- */
+.starfield{
+  position: fixed; inset:0; z-index:-2;
+  opacity: var(--star-opacity);
+  transition: opacity 0.2s ease;
+  background:
+    radial-gradient(1px 1px at 12% 22%, #ffffff55 0, transparent 60%),
+    radial-gradient(1px 1px at 78% 8%, #ffffff40 0, transparent 60%),
+    radial-gradient(2px 2px at 34% 62%, #ffffff35 0, transparent 60%),
+    radial-gradient(1px 1px at 60% 78%, #ffffff45 0, transparent 60%),
+    radial-gradient(1px 1px at 90% 55%, #ffffff30 0, transparent 60%),
+    radial-gradient(1px 1px at 8% 88%, #ffffff30 0, transparent 60%),
+    radial-gradient(1px 1px at 50% 15%, #ffffff2a 0, transparent 60%),
+    linear-gradient(180deg, #07080a 0%, #0a0c0f 60%, #07080a 100%);
+}
+
+/* ---------- Header (mobile-first) ---------- */
+header.hero{
+  position: relative;
+  min-height: 62vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding: calc(env(safe-area-inset-top,0px) + 64px) 5vw 40px;
+  overflow:hidden;
+  border-bottom: 1px solid var(--line);
+}
+.hero-art{
+  position:absolute; inset:0; z-index:-1;
+}
+.hero-art svg{ width:100%; height:100%; display:block; }
+.hero-vignette{
+  position:absolute; inset:0; z-index:-1;
+  background: radial-gradient(ellipse at 50% 30%, transparent 0%, var(--bg) 78%),
+              linear-gradient(180deg, transparent 40%, var(--bg) 100%);
+  transition: background 0.2s ease;
+}
+.hero-kicker{
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--phosphor);
+  margin: 0 0 14px;
+  max-width: 620px;
+  border-left: 2px solid var(--phosphor);
+  padding-left: 10px;
+}
+.hero h1{
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.6rem, 15vw, 8.5rem);
+  letter-spacing: 0.02em;
+  margin: 0;
+  line-height: 0.94;
+  color: var(--text);
+  text-shadow: 0 0 60px rgba(232,166,56,0.12);
+}
+.hero-sub{
+  margin: 18px 0 0;
+  max-width: 640px;
+  font-size: 0.98rem;
+  color: var(--text-dim);
+}
+.hero-meta{
+  display:flex; gap: 16px 24px; flex-wrap:wrap;
+  margin-top: 26px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-faint);
+}
+.hero-meta span b{ color: var(--amber); font-weight: 500; }
+
+@media (min-width: 640px){
+  header.hero{ min-height: 78vh; padding: calc(env(safe-area-inset-top,0px) + 28px) 6vw 64px; }
+  .hero-kicker{ font-size: 0.78rem; margin-bottom: 18px; padding-left: 12px; }
+  .hero-sub{ margin-top: 22px; font-size: 1.05rem; }
+  .hero-meta{ gap: 28px; margin-top: 34px; font-size: 0.78rem; }
+}
+
+/* ---------- Secties (mobile-first) ---------- */
+main{ max-width: 1120px; margin: 0 auto; padding: 0 5vw; }
+section{ padding: 52px 0; border-bottom: 1px solid var(--line); }
+section:last-of-type{ border-bottom: none; }
+.section-head{
+  display:flex; flex-direction:column; gap:10px;
+  margin-bottom: 32px;
+}
+.section-head h2{
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.6rem, 7vw, 2.6rem);
+  margin: 0;
+  color: var(--text);
+}
+.section-head p{
+  margin:0; color: var(--text-dim); max-width: 420px; font-size: 0.92rem;
+}
+
+@media (min-width: 640px){
+  main{ padding: 0 6vw; }
+  section{ padding: 88px 0; }
+  .section-head{ flex-direction:row; align-items:baseline; justify-content:space-between; gap:24px; margin-bottom: 48px; flex-wrap:wrap; }
+  .section-head p{ font-size: 0.95rem; }
+}
+
+/* ---------- Tijdlijn (mobile-first: één kolom, lijn links) ---------- */
+.timeline{
+  position: relative;
+  padding-left: 0;
+}
+.timeline::before{
+  content:"";
+  position:absolute;
+  left: 5px;
+  top: 8px; bottom: 8px;
+  width: 1px;
+  background: linear-gradient(180deg, transparent, var(--line) 4%, var(--line) 96%, transparent);
+}
+.entry{
+  position: relative;
+  display: block;
+  padding: 0 0 4px 26px;
+}
+.entry + .entry{ margin-top: 6px; }
+.entry-years{
+  padding-top: 2px;
+  font-family: var(--font-mono);
+  text-align: left;
+  position: relative;
+  margin-bottom: 10px;
+}
+.entry-years .story-year{
+  display:inline-block; font-size: 1.3rem; color: var(--amber); font-weight: 600;
+}
+.entry-years .release-year{
+  display:inline-block; font-size: 0.68rem; color: var(--text-faint); margin-left: 8px;
+}
+.entry-years::after{
+  content:"";
+  position:absolute;
+  left: -26px; top: 9px;
+  width: 9px; height:9px; border-radius:50%;
+  background: var(--bg);
+  border: 2px solid var(--amber);
+}
+.entry-body{
+  padding: 0 0 40px;
+}
+.entry-title-row{
+  display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+  margin-bottom: 6px;
+}
+.entry-title-row h3{
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 6vw, 1.9rem);
+  font-weight: 600;
+  margin:0;
+  color: var(--text);
+}
+.badge{
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.03em;
+  border: 1px solid var(--amber-dim);
+  padding: 3px 8px;
+  border-radius: 2px;
+  color: var(--text-dim);
+}
+.badge.serie{ color: var(--phosphor); border-color: #2a4a3c; }
+.entry-gap{
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-faint);
+  margin-bottom: 16px;
+}
+.entry-layout{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.poster-slot{
+  width: 140px;
+  aspect-ratio: 2/3;
+  background: linear-gradient(155deg, var(--bg-panel) 0%, var(--bg-panel-2) 100%);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  display:flex; align-items:center; justify-content:center;
+  position: relative;
+  overflow:hidden;
+}
+.poster-slot img{ width:100%; height:100%; object-fit: cover; }
+.poster-slot .poster-fallback{
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--text-faint);
+  text-align:center;
+  padding: 12px;
+  letter-spacing: 0.03em;
+}
+.poster-slot::before{
+  content:"";
+  position:absolute; inset:0;
+  background: repeating-linear-gradient(115deg, transparent 0 18px, rgba(255,255,255,0.015) 18px 19px);
+  pointer-events:none;
+}
+.entry-text p{ margin: 0 0 14px; color: var(--text); font-size: 0.93rem; }
+.entry-text p:last-child{ margin-bottom:0; }
+.entry-text .label{
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--text-faint);
+  letter-spacing: 0.04em;
+  margin: 20px 0 8px;
+}
+.entry-text .label:first-of-type{ margin-top: 4px; }
+
+.companies-list, .chars-list{
+  list-style:none; margin:0; padding:0;
+  display:flex; flex-direction:column; gap:10px;
+}
+.companies-list li, .chars-list li{
+  border-left: 2px solid var(--line);
+  padding: 2px 0 2px 14px;
+}
+.companies-list li b, .chars-list li b{ color: var(--text); font-weight: 600; }
+.chars-list .actor{
+  color: var(--text-faint); font-size: 0.85rem;
+}
+.chars-list .status{
+  display:inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--phosphor);
+  margin-left: 6px;
+}
+.chars-list .note{ display:block; color: var(--text-dim); font-size: 0.88rem; margin-top: 2px; }
+
+.connection-box{
+  margin-top: 22px;
+  border: 1px solid var(--amber-dim);
+  background: rgba(232,166,56,0.04);
+  padding: 14px 16px;
+  border-radius: 2px;
+}
+.connection-box .label{ margin: 0 0 6px; color: var(--amber); }
+.connection-box p{ margin:0; font-size: 0.9rem; color: var(--text); }
+
+@media (min-width: 640px){
+  .entry{ padding-left: 32px; }
+  .entry-layout{ flex-direction: row; align-items: flex-start; gap: 28px; }
+  .poster-slot{ width: 180px; flex: none; }
+  .entry-text p{ font-size: 0.96rem; }
+}
+
+@media (min-width: 860px){
+  .timeline::before{ left: 130px; }
+  .entry{ display: grid; grid-template-columns: 130px 1fr; gap: 0 32px; padding-left: 0; }
+  .entry-years{ text-align: right; padding-top: 6px; padding-right: 32px; margin-bottom: 0; }
+  .entry-years .story-year{ display:block; font-size: 1.5rem; }
+  .entry-years .release-year{ display:block; margin-left:0; margin-top: 2px; }
+  .entry-years::after{ left: auto; right: -4.5px; top: 12px; }
+  .entry-body{ padding: 4px 0 46px; }
+}
+
+/* ---------- Bedrijvenoverzicht ---------- */
+.companies-grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+@media (min-width: 640px){
+  .companies-grid{ grid-template-columns: repeat(auto-fit, minmax(230px,1fr)); }
+}
+.company-card{
+  background: var(--bg-panel);
+  padding: 22px;
+}
+.company-card h3{
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+  color: var(--text);
+  font-weight: 600;
+}
+.company-card p{ margin:0; color: var(--text-dim); font-size: 0.88rem; }
+.company-card .films-in{
+  margin-top: 14px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-faint);
+}
+
+/* ---------- Footer / setup ---------- */
+footer{
+  padding: 44px 5vw 56px;
+  max-width: 1120px; margin: 0 auto;
+  font-size: 0.84rem;
+  color: var(--text-faint);
+}
+@media (min-width: 640px){
+  footer{ padding: 56px 6vw 80px; font-size: 0.86rem; }
+}
+footer h2{
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--text);
+  font-weight:600;
+}
+footer code{
+  font-family: var(--font-mono);
+  background: var(--bg-panel);
+  padding: 1px 6px;
+  border-radius: 2px;
+  color: var(--phosphor);
+}
+footer ol{ padding-left: 20px; }
+footer li{ margin-bottom: 8px; }
+
+:focus-visible{ outline: 2px solid var(--amber); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+</style>
+</head>
+<body>
+<div class="starfield"></div>
+
+<button type="button" class="theme-toggle" id="theme-toggle" aria-label="Wissel tussen donker en licht thema">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+    <circle cx="12" cy="12" r="4.2"/>
+    <path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/>
+  </svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+    <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/>
+  </svg>
+  <span id="theme-toggle-label">donker</span>
+</button>
+
+<header class="hero">
+  <div class="hero-art">
+    <svg viewBox="0 0 1400 800" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <radialGradient id="glow" cx="50%" cy="35%" r="60%">
+          <stop offset="0%" stop-color="#e8a638" stop-opacity="0.18"/>
+          <stop offset="100%" stop-color="#e8a638" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="ridge" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#161a1e"/>
+          <stop offset="100%" stop-color="#07080a"/>
+        </linearGradient>
+      </defs>
+      <rect width="1400" height="800" fill="url(#glow)"/>
+      <!-- abstracte, biomechanisch geïnspireerde vormen: eigen ontwerp, geen bestaand filmbeeld -->
+      <g stroke="#2a3036" stroke-width="1" fill="none" opacity="0.55">
+        <path d="M -50 620 C 200 560, 320 560, 420 500 C 520 440, 560 380, 700 380 C 840 380, 880 440, 980 500 C 1080 560, 1200 560, 1450 620"/>
+        <path d="M -50 660 C 220 600, 340 610, 440 550 C 540 490, 580 430, 700 430 C 820 430, 860 490, 960 550 C 1060 610, 1180 600, 1450 660"/>
+        <path d="M -50 700 C 240 650, 360 660, 460 610 C 560 560, 600 500, 700 500 C 800 500, 840 560, 940 610 C 1040 660, 1160 650, 1450 700"/>
+      </g>
+      <g fill="#0d1013" stroke="#232a30" stroke-width="1">
+        <ellipse cx="700" cy="540" rx="620" ry="120"/>
+      </g>
+      <g stroke="#3a4248" stroke-width="1" opacity="0.5">
+        <line x1="150" y1="420" x2="150" y2="800"/>
+        <line x1="340" y1="380" x2="340" y2="800"/>
+        <line x1="1060" y1="380" x2="1060" y2="800"/>
+        <line x1="1250" y1="420" x2="1250" y2="800"/>
+      </g>
+      <g fill="#e8a638" opacity="0.7">
+        <circle cx="150" cy="420" r="2.5"/>
+        <circle cx="340" cy="380" r="2.5"/>
+        <circle cx="1060" cy="380" r="2.5"/>
+        <circle cx="1250" cy="420" r="2.5"/>
+      </g>
+    </svg>
+  </div>
+  <div class="hero-vignette"></div>
+
+  <p class="hero-kicker">MU/TH/UR 6000 — ARCHIEFDOSSIER · TOEGANGSNIVEAU: OPENBAAR</p>
+  <h1>ALIEN<br>TIJDLIJN</h1>
+  <p class="hero-sub">Een chronologisch overzicht van de Alien-filmreeks: de verhaaltijdlijn, de terugkerende personages, de bedrijven achter de Xenomorph — en hoe elke productie in het geheel past.</p>
+  <div class="hero-meta">
+    <span><b>8</b> producties</span>
+    <span><b>2093 – 2379</b> verhaaljaren</span>
+    <span><b>1979 – 2025</b> releasejaren</span>
+    <span><b>4</b> bedrijven</span>
+  </div>
+</header>
+
+<main>
+
+  <section id="tijdlijn">
+    <div class="section-head">
+      <h2>Chronologisch overzicht</h2>
+      <p>Geordend op verhaaltijd, niet op releasedatum. Elke entry toont het jaar in de fictie, het releasejaar en de tijd tot de volgende gebeurtenis.</p>
+    </div>
+
+    <div class="timeline" id="timeline-container">
+      <!-- entries worden hier door JS ingevoegd op basis van assets/films.json -->
+    </div>
+  </section>
+
+  <section id="bedrijven">
+    <div class="section-head">
+      <h2>Bedrijven en organisaties</h2>
+      <p>De commerciële en militaire machten die de gebeurtenissen in de reeks aansturen.</p>
+    </div>
+    <div class="companies-grid" id="companies-container"></div>
+  </section>
+
+</main>
+
+<footer>
+  <h2>Posters en beeldmateriaal koppelen (TMDB)</h2>
+  <p>Deze pagina toont per film een lege posterplek totdat <code>assets/films.json</code> een <code>poster_url</code> bevat. Filmposters zijn auteursrechtelijk beschermd materiaal, dus deze pagina bevat er zelf geen — en de TMDB-sleutel hoort nooit in client-side code terecht te komen, ook niet als <code>fetch()</code>-aanroep vanuit deze HTML, omdat iedereen de broncode van een GitHub Pages-site kan inzien en de sleutel dan direct leesbaar is.</p>
+  <p>In plaats daarvan haalt een GitHub Action de posterlinks tijdens de build op met de repository-secret <code>TMDB_KEY</code>, en schrijft alleen de resulterende URL's terug naar <code>assets/films.json</code>. De sleutel zelf verlaat de Action-omgeving nooit.</p>
+  <ol>
+    <li>Zorg dat de repository-secret <code>TMDB_KEY</code> al is ingesteld (Settings → Secrets and variables → Actions).</li>
+    <li>Voeg <code>scripts/fetch-posters.mjs</code> en <code>.github/workflows/fetch-posters.yml</code> toe (bijgeleverd).</li>
+    <li>Draai de workflow eenmalig handmatig via Actions → "Fetch TMDB posters" → Run workflow. De posterlinks worden dan als commit teruggeschreven naar <code>assets/films.json</code>.</li>
+    <li>Ververs de site: elke poster verschijnt automatisch zodra <code>poster_url</code> gevuld is.</li>
+  </ol>
+</footer>
+
+<script>
+async function laadData(){
+  const container = document.getElementById('timeline-container');
+  const companiesContainer = document.getElementById('companies-container');
+  let data;
+  try{
+    const res = await fetch('assets/films.json');
+    data = await res.json();
+  }catch(e){
+    container.innerHTML = '<p style="color:#8a9096;font-family:var(--font-mono);font-size:0.85rem;">Kon assets/films.json niet laden. Host deze pagina via een lokale server of GitHub Pages (niet als los bestand geopend), zodat fetch() werkt.</p>';
+    return;
+  }
+
+  const films = data.films.slice().sort((a,b)=>a.volgorde-b.volgorde);
+
+  container.innerHTML = films.map(f => {
+    const chars = f.personages.map(p => `
+      <li>
+        <b>${escapeHtml(p.naam)}</b> <span class="status">${escapeHtml(p.status)}</span><br>
+        <span class="actor">${escapeHtml(p.acteur)}</span>
+        <span class="note">${escapeHtml(p.notitie)}</span>
+      </li>`).join('');
+
+    const bedrijven = f.bedrijven.map(b => `
+      <li><b>${escapeHtml(b.naam)}</b><br>${escapeHtml(b.rol)}</li>`).join('');
+
+    const posterInner = f.poster_url
+      ? `<img src="${escapeHtml(f.poster_url)}" alt="Poster van ${escapeHtml(f.titel)}" loading="lazy">`
+      : `<div class="poster-fallback">${escapeHtml(f.titel)}<br>${f.verhaaljaar}<br>— poster niet gekoppeld —</div>`;
+
+    return `
+    <article class="entry" id="${f.id}">
+      <div class="entry-years">
+        <span class="story-year">${f.verhaaljaar}</span>
+        <span class="release-year">release ${f.releasejaar}</span>
+      </div>
+      <div class="entry-body">
+        <div class="entry-title-row">
+          <h3>${escapeHtml(f.titel)}</h3>
+          <span class="badge ${f.type === 'tv-serie' ? 'serie' : ''}">${f.type === 'tv-serie' ? 'tv-serie' : 'film'}</span>
+        </div>
+        <div class="entry-gap">Regie: ${escapeHtml(f.regisseur)} — tot volgende gebeurtenis: ${escapeHtml(f.gapTotVolgende)}</div>
+        <div class="entry-layout">
+          <div class="poster-slot">${posterInner}</div>
+          <div class="entry-text">
+            <p>${escapeHtml(f.synopsis)}</p>
+
+            <p class="label">Bedrijven</p>
+            <ul class="companies-list">${bedrijven}</ul>
+
+            <p class="label">Personages</p>
+            <ul class="chars-list">${chars}</ul>
+
+            <div class="connection-box">
+              <p class="label">Plotverband</p>
+              <p>${escapeHtml(f.plotverband)}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>`;
+  }).join('');
+
+  // Bedrijvenoverzicht: unieke bedrijven verzamelen
+  const map = new Map();
+  films.forEach(f => f.bedrijven.forEach(b => {
+    const key = b.naam;
+    if(!map.has(key)) map.set(key, { naam: b.naam, rollen: [], films: [] });
+    map.get(key).rollen.push(b.rol);
+    map.get(key).films.push(`${f.titel} (${f.verhaaljaar})`);
+  }));
+
+  companiesContainer.innerHTML = Array.from(map.values()).map(c => `
+    <div class="company-card">
+      <h3>${escapeHtml(c.naam)}</h3>
+      <p>${escapeHtml(c.rollen[0])}</p>
+      <div class="films-in">${c.films.map(escapeHtml).join(' · ')}</div>
+    </div>
+  `).join('');
+}
+
+function escapeHtml(str){
+  return String(str).replace(/[&<>"']/g, s => ({
+    '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'
+  }[s]));
+}
+
+/* ---------- Thema-schakelaar ---------- */
+(function initTheme(){
+  const root = document.documentElement;
+  const btn = document.getElementById('theme-toggle');
+  const label = document.getElementById('theme-toggle-label');
+  const STORAGE_KEY = 'alien-tijdlijn-thema';
+
+  function systemPrefersLight(){
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+  }
+
+  function apply(theme){
+    // theme is 'dark', 'light', of null (volg systeeminstelling)
+    if (theme) root.setAttribute('data-theme', theme);
+    else root.removeAttribute('data-theme');
+
+    const isLight = theme ? theme === 'light' : systemPrefersLight();
+    label.textContent = isLight ? 'donker' : 'licht';
+    btn.setAttribute('aria-label', isLight ? 'Naar donker thema schakelen' : 'Naar licht thema schakelen');
+  }
+
+  let stored = null;
+  try { stored = localStorage.getItem(STORAGE_KEY); } catch (e) { /* opslag niet beschikbaar */ }
+  apply(stored);
+
+  btn.addEventListener('click', () => {
+    const currentlyLight = root.getAttribute('data-theme')
+      ? root.getAttribute('data-theme') === 'light'
+      : systemPrefersLight();
+    const next = currentlyLight ? 'dark' : 'light';
+    apply(next);
+    try { localStorage.setItem(STORAGE_KEY, next); } catch (e) { /* opslag niet beschikbaar */ }
+  });
+})();
+
+laadData();
+</script>
+</body>
+</html>
